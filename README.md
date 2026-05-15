@@ -1,2 +1,1 @@
-# GELA-Ethical-AI
-Global Ethical Leadership Alliance - Ethical Multi-Agent AI System for Justice, Unity &amp; Humanity
+https://docs.google.com/document/d/17XgchJIe5Gcetf-gqU6_n0mFxvAOUp5yQzMxzy22nyc/edit?usp=drivesdk
