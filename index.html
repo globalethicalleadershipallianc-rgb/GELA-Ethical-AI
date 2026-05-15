@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GELA - Global Ethical Leadership Alliance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #fefaf5;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+            flex-wrap: wrap;
+            gap: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #c49a2b;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1a1a2e;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #c49a2b;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 10px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #c49a2b;
+            color: #fff;
+            border: 1px solid #c49a2b;
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: #c49a2b;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #c49a2b;
+            border: 1px solid #c49a2b;
+        }
+
+        .btn-outline:hover {
+            background: #c49a2b;
+            color: #fff;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: linear-gradient(135deg, #fefaf5 0%, #fff5e6 100%);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            color: #c49a2b;
+            margin-bottom: 1rem;
+        }
+
+        .hero-tagline {
+            font-size: 1.2rem;
+            color: #4a4a6a;
+            margin-bottom: 2rem;
+        }
+
+        .pillars {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .pillar {
+            background: #fff;
+            padding: 0.8rem 1.8rem;
+            border-radius: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            font-weight: 600;
+            color: #c49a2b;
+        }
+
+        /* Sections */
+        .section {
+            padding: 70px 10%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #c49a2b;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .section-sub {
+            text-align: center;
+            color: #5a5a7a;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        /* Cards */
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .framework-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .framework-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .axiom-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .axiom-card {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 16px;
+            border-left: 4px solid #c49a2b;
+        }
+
+        .axiom-card strong {
+            color: #c49a2b;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #1a1a2e;
+            color: #ccc;
+            margin-top: 3rem;
+        }
+
+        .footer a {
+            color: #c49a2b;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero h1 { font-size: 2rem; }
+            .pillars { gap: 0.8rem; }
+            .pillar { padding: 0.4rem 1rem; font-size: 0.85rem; }
+            .section { padding: 40px 5%; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🌍 GELA</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#csd">CSD Framework</a></li>
+            <li><a href="#kernel">Ethical Kernel</a></li>
+            <li><a href="#join">Join</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Global Ethical Leadership Alliance</h1>
+        <div class="pillars">
+            <div class="pillar">⚖️ Justice is Worship</div>
+            <div class="pillar">🤝 Unity is Strength</div>
+            <div class="pillar">🌍 Humanity is Destiny</div>
+        </div>
+        <p class="hero-tagline">An apolitical, non-profit international alliance empowering ethical leaders, youth changemakers, and intercultural bridges — through the Conscious Systems Design (CSD) framework.</p>
+        <div class="btn-group" style="display: flex; gap: 1rem; justify-content: center;">
+            <a href="#join" class="btn btn-primary">Join the Alliance</a>
+            <a href="#csd" class="btn btn-outline">Explore Our Framework</a>
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.85rem; color: #888;">Apolitical · Non-Profit · Global</p>
+    </div>
+
+    <div id="about" class="section">
+        <h2 class="section-title">Who We Are</h2>
+        <p class="section-sub">An Alliance Built on Conscience</p>
+        <div style="background: #fff; padding: 2rem; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <p>GELA is not a political movement or a software project. It is a living alliance of thinkers, youth leaders, educators, and activists who believe that every system — from AI to governance — must be designed with ethical intention.</p>
+            <p style="margin-top: 1rem;">Born in Dhaka in February 2026, GELA draws on the values of Islamic ethics (Adl, Amanah, Tawhid, Ilm), universal human rights, and the UN Sustainable Development Goals — weaving them into a single, coherent framework: Conscious Systems Design.</p>
+            <p style="margin-top: 1rem; font-weight: 500;">Our Core Belief: Technology must serve humanity — not control it. Leadership must be ethical — not power-hungry. Justice is not a policy position. It is a moral obligation — a form of worship.</p>
+        </div>
+    </div>
+
+    <div id="csd" class="section" style="background: #fff5e6; border-radius: 30px;">
+        <h2 class="section-title">Conscious Systems Design</h2>
+        <p class="section-sub">CSD is GELA's philosophical and practical framework for building just, resilient, and humane systems. Grounded in the Still Human Protocol and the Ethical Kernel.</p>
+        <div class="framework-grid">
+            <div class="framework-card"><div class="card-icon">🧭</div><h3>Still Human Protocol</h3><p>All AI and automated systems preserve human agency, dignity, and accountability.</p></div>
+            <div class="framework-card"><div class="card-icon">⚖️</div><h3>Ethical Kernel</h3><p>Six foundational axioms forming the moral core of any GELA-aligned system.</p></div>
+            <div class="framework-card"><div class="card-icon">🏛️</div><h3>AI Governance L1–L5</h3><p>Graduated framework for responsible AI integration — from tools to infrastructure.</p></div>
+            <div class="framework-card"><div class="card-icon">🌿</div><h3>Amanat Principle</h3><p>Leadership as sacred trust (amanah): stewardship of communities and future generations.</p></div>
+            <div class="framework-card"><div class="card-icon">🔒</div><h3>Still Human Boundary</h3><p>Non-negotiable limits protecting human dignity from algorithmic erosion.</p></div>
+            <div class="framework-card"><div class="card-icon">✨</div><h3>CCAH</h3><p>Conscious Civilization Attractor Hypothesis — ethical civilizations as a natural attractor state.</p></div>
+        </div>
+    </div>
+
+    <div id="kernel" class="section">
+        <h2 class="section-title">The Ethical Kernel</h2>
+        <p class="section-sub">Six Axioms of Ethical Leadership — the moral constitution of GELA.</p>
+        <div class="axiom-grid">
+            <div class="axiom-card"><strong>01 Tawhid — Unity of Purpose</strong> All action flows from a single, integrated moral source. No contradiction between faith, reason, and justice.</div>
+            <div class="axiom-card"><strong>02 Adl — Justice as Foundation</strong> Justice is not a policy option — it is the structural baseline of every legitimate system.</div>
+            <div class="axiom-card"><strong>03 Amanah — Sacred Trust</strong> Leadership is a trust (amanah), not a privilege. Power held in stewardship.</div>
+            <div class="axiom-card"><strong>04 Ilm — Knowledge with Conscience</strong> Knowledge pursued without ethical grounding is dangerous. Learning must serve human flourishing.</div>
+            <div class="axiom-card"><strong>05 Rahmah — Universal Compassion</strong> Systems protect the most vulnerable. Mercy is a structural requirement.</div>
+            <div class="axiom-card"><strong>06 Shura — Collective Deliberation</strong> Decisions affecting communities must involve those communities. Inclusion is not optional.</div>
+        </div>
+    </div>
+
+    <div id="join" class="section" style="text-align: center;">
+        <h2 class="section-title">Join the Alliance</h2>
+        <div style="background: #fff; padding: 2rem; border-radius: 20px;">
+            <p>GELA welcomes anyone who shares our commitment to ethical leadership, youth empowerment, and intercultural dialogue — regardless of background, nationality, or field.</p>
+            <p style="margin: 1.5rem 0;">🎓 Students 🧑‍🏫 Educators 🧑‍💻 Researchers 🌐 Activists 🏛️ Policymakers 💡 Changemakers</p>
+            <a href="mailto:globalethicalleadershipallianc@gmail.com" class="btn btn-primary" style="margin: 0 auto;">✉️ Contact Us to Join</a>
+            <p style="margin-top: 1rem;">Or email: globalethicalleadershipallianc@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>⚖️ Justice is Worship | 🤝 Unity is Strength | 🌍 Humanity is Destiny</p>
+        <p>© 2026 Global Ethical Leadership Alliance — Founded in Dhaka, Bangladesh · Built for the world</p>
+        <p><a href="#">Google Site</a>  ·  <a href="mailto:globalethicalleadershipallianc@gmail.com">Email</a></p>
+    </div>
+</body>
+</html>
