@@ -1,17 +1,25 @@
 # 🌍 Global Ethical Leadership Alliance (GELA)
 
-**An apolitical, non-profit international alliance empowering ethical leaders, youth changemakers, and intercultural bridges through Conscious Systems Design (CSD).**
+**An international alliance empowering ethical leaders and advancing ethical AI through Conscious Systems Design (CSD).**
+
+---
+
+## 🌐 Official Website
+
+**🔗 [Visit GELA Website](https://globalethicalleadershipallianc-rgb.github.io/GELA-Ethical-AI/)**
+
+Once GitHub Pages is enabled in repository settings, the website will be live and accessible to the world.
 
 ---
 
 ## 📖 About GELA
 
-GELA is a living alliance of thinkers, youth leaders, educators, and activists who believe that **every system — from AI to governance — must be designed with ethical intention.**
+The **Global Ethical Leadership Alliance (GELA)** is a forward-thinking, open-source community dedicated to advancing ethical artificial intelligence and responsible innovation. We bring together thinkers, developers, ethicists, and leaders to create frameworks that put ethics at the center of technological progress.
 
-Born in **Dhaka, Bangladesh in February 2026**, GELA draws on:
-- Islamic ethics (**Adl, Amanah, Tawhid, Ilm**)
-- Universal human rights principles
-- UN Sustainable Development Goals (SDGs)
+**Founded in Dhaka, Bangladesh in February 2026**, GELA draws on:
+- 🕌 Islamic ethics (**Adl, Amanah, Tawhid, Ilm**)
+- 🌍 Universal human rights principles
+- 🎯 UN Sustainable Development Goals (SDGs)
 
 We weave these values into a single, coherent framework: **Conscious Systems Design (CSD)**.
 
@@ -25,51 +33,27 @@ We weave these values into a single, coherent framework: **Conscious Systems Des
 
 ---
 
-## 🌐 Website
+## 📊 CSD Framework - 6 Core Components
 
-**Live Website:** [https://globalethicalleadershipallianc-rgb.github.io/GELA-Ethical-AI](https://globalethicalleadershipallianc-rgb.github.io/GELA-Ethical-AI)
+The **Conscious Systems Design (CSD) Framework** guides all GELA initiatives:
 
-The website features:
-- **Hero Section** with GELA's three pillars
-- **About Us** — Who we are and our mission
-- **CSD Framework** — 6 core components
-- **Ethical Kernel** — 6 axioms of ethical leadership
-- **Join Section** — How to become part of the alliance
-
----
-
-## 📚 Conscious Systems Design (CSD) Framework
-
-CSD is GELA's philosophical and practical framework for building just, resilient, and humane systems.
-
-### Six Core Components:
-
-1. **🧭 Still Human Protocol**
-   - All AI and automated systems preserve human agency, dignity, and accountability.
-
-2. **⚖️ Ethical Kernel**
-   - Six foundational axioms forming the moral core of any GELA-aligned system.
-
-3. **🏛️ AI Governance L1–L5**
-   - Graduated framework for responsible AI integration — from tools to infrastructure.
-
-4. **🌿 Amanat Principle**
-   - Leadership as sacred trust (amanah): stewardship of communities and future generations.
-
-5. **🔒 Still Human Boundary**
-   - Non-negotiable limits protecting human dignity from algorithmic erosion.
-
-6. **✨ CCAH (Conscious Civilization Attractor Hypothesis)**
-   - Ethical civilizations as a natural attractor state.
+| Component | Description |
+|-----------|-------------|
+| **💭 Consciousness** | Self-awareness and understanding of ethical implications in every action and decision. |
+| **🤲 Service** | Commitment to serving humanity using technology as a tool for collective good. |
+| **⚔️ Discipline** | Rigorous adherence to ethical principles in research, development, and deployment. |
+| **🚀 Innovation** | Creative problem-solving that balances advancement with ethical responsibility. |
+| **🌱 Sustainability** | Creating systems that are environmentally responsible and socially equitable. |
+| **🔗 Connection** | Building bridges, fostering collaboration, and ensuring inclusive dialogue. |
 
 ---
 
-## 💎 The Ethical Kernel — Six Axioms
+## 🔑 Ethical Kernel - 6 Axioms
 
-The moral constitution of GELA:
+The moral foundation of GELA's work:
 
 | # | Axiom | Meaning |
-|---|-------|---------|
+|---|-------|----------|
 | **01** | **Tawhid** | Unity of Purpose — All action flows from a single, integrated moral source. |
 | **02** | **Adl** | Justice as Foundation — Justice is the structural baseline of every legitimate system. |
 | **03** | **Amanah** | Sacred Trust — Leadership is a trust, not a privilege. Power held in stewardship. |
@@ -81,64 +65,74 @@ The moral constitution of GELA:
 
 ## 🤝 Who Can Join?
 
-GELA welcomes anyone who shares our commitment to **ethical leadership, youth empowerment, and intercultural dialogue** — regardless of background, nationality, or field.
+GELA welcomes anyone who shares our commitment to **ethical leadership, youth empowerment, and intercultural dialogue**:
 
-**We invite:**
 - 🎓 Students
-- 🧑‍🏫 Educators
-- 🧑‍💻 Researchers & Technologists
+- 🧑‍🏫 Educators & Researchers
+- 🧑‍💻 Developers & Technologists
 - 🌐 Activists & Changemakers
 - 🏛️ Policymakers & Leaders
 - 💡 Social Entrepreneurs
 
 ---
 
-## 📞 Get in Touch
+## 🚀 How to Contribute
 
-**Email:** [globalethicalleadershipallianc@gmail.com](mailto:globalethicalleadershipallianc@gmail.com)
+We welcome contributions from everyone:
 
-**GitHub:** [globalethicalleadershipallianc-rgb](https://github.com/globalethicalleadershipallianc-rgb)
+### For Developers
+```bash
+git clone https://github.com/globalethicalleadershipallianc-rgb/GELA-Ethical-AI.git
+cd GELA-Ethical-AI
+git checkout -b feature/your-feature
+# Make your changes
+git commit -m "Add your feature"
+git push origin feature/your-feature
+# Open a Pull Request
+```
+
+### For Writers & Researchers
+- Contribute research papers and ethical frameworks
+- Help document best practices
+- Share case studies and examples
+
+### For Designers
+- Improve the website and user experience
+- Create visual resources and infographics
+- Enhance accessibility and design
+
+### For Ideas & Feedback
+- Open GitHub issues to discuss improvements
+- Provide constructive feedback
+- Suggest new ethical frameworks
 
 ---
 
-## 🛠️ How to Contribute
+## 📧 Contact & Communication
 
-We welcome contributions in the form of:
-- **Ideas & Feedback** — Share your thoughts on CSD Framework
-- **Documentation** — Help us refine and translate our materials
-- **Content** — Write articles, case studies, or educational materials
-- **Code & Tools** — Develop resources aligned with GELA values
-- **Outreach** — Help spread the message of ethical leadership
-
-To contribute:
-1. Fork this repository
-2. Create a feature branch (`git checkout -b feature/your-idea`)
-3. Commit your changes (`git commit -m 'Add your message'`)
-4. Push to the branch (`git push origin feature/your-idea`)
-5. Open a Pull Request
+- **Email:** globalethicalleadershipallianc@gmail.com
+- **GitHub Organization:** [globalethicalleadershipallianc-rgb](https://github.com/globalethicalleadershipallianc-rgb)
+- **Website:** [https://globalethicalleadershipallianc-rgb.github.io/GELA-Ethical-AI/](https://globalethicalleadershipallianc-rgb.github.io/GELA-Ethical-AI/)
 
 ---
 
-## 📋 Repository Structure
+## 📁 Repository Structure
 
 ```
 GELA-Ethical-AI/
-├── index.html          # Main website
-├── README.md           # This file
-├── GELA_Complete_Documentation.md
-├── ROADMAP.md
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-└── /assets/            # (Future) Images, icons, resources
+├── index.html              # Official website
+├── README.md               # This file
+├── CONTRIBUTING.md         # Contribution guidelines
+└── docs/                   # Additional documentation
 ```
 
 ---
 
 ## 📜 Our Three Pillars
 
-⚖️ **Justice is Worship**  
-🤝 **Unity is Strength**  
-🌍 **Humanity is Destiny**
+⚖️ **Justice is Worship** — We pursue fairness and accountability  
+🤝 **Unity is Strength** — We believe in collaboration and collective action  
+🌍 **Humanity is Destiny** — We are committed to human flourishing
 
 ---
 
@@ -146,7 +140,7 @@ GELA-Ethical-AI/
 
 To build a global movement of ethical leaders who design systems — technological, political, educational, economic — that serve human dignity, justice, and collective flourishing.
 
-We believe that **conscience is not a limitation on power; it is the foundation of legitimate authority.**
+**We believe that conscience is not a limitation on power; it is the foundation of legitimate authority.**
 
 ---
 
@@ -158,16 +152,25 @@ This project is open-source and shared under principles of ethical stewardship. 
 
 ## 💚 Acknowledgments
 
-- **Founder & Leader:** Saon (Founder, GELA)
+- **Founder & Leader:** Saon (Founder, Global Ethical Leadership Alliance)
 - **AI Contributors:** DeepSeek, Grok (xAI), GitHub Copilot
 - **Community:** Every person who believes in ethical leadership and just systems
 
 ---
 
-**Built from Dhaka, Bangladesh — for the world.**
+## 🔗 Quick Links
 
-**Justice is Worship. ⚖️ Unity is Strength. 🤝 Humanity is Destiny. 🌍**
+- 🌐 [Official Website](https://globalethicalleadershipallianc-rgb.github.io/GELA-Ethical-AI/)
+- 💬 [Discussions & Ideas](https://github.com/globalethicalleadershipallianc-rgb/GELA-Ethical-AI/discussions)
+- 📋 [Issues & Roadmap](https://github.com/globalethicalleadershipallianc-rgb/GELA-Ethical-AI/issues)
+- 🐙 [GitHub Organization](https://github.com/globalethicalleadershipallianc-rgb)
 
 ---
 
-*Last Updated: May 15, 2026*
+**Built from Dhaka, Bangladesh — for the world.**
+
+**⚖️ Justice is Worship. 🤝 Unity is Strength. 🌍 Humanity is Destiny.**
+
+---
+
+*Last Updated: May 21, 2026*

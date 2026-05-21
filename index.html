@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GELA - Global Ethical Leadership Alliance</title>
+    <title>GELA - Global Ethical Leadership Alliance | Ethical AI for Humanity</title>
+    <meta name="description" content="Global Ethical Leadership Alliance (GELA) - Advancing ethical AI, just systems, and responsible innovation for a better world.">
+    <meta name="keywords" content="ethical AI, leadership, justice, sustainability, innovation, CSD framework">
     <style>
         * {
             margin: 0;
@@ -11,291 +13,660 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --gold: #d4af37;
+            --cream: #f5f1e8;
+            --dark-blue: #1a3a52;
+            --light-blue: #2d5a7b;
+            --accent: #8b6914;
+            --white: #ffffff;
+            --text-dark: #2c2c2c;
+        }
+
         body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: #fefaf5;
-            color: #1a1a2e;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--cream);
         }
 
         /* Navigation */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10%;
-            background: #fff;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-            flex-wrap: wrap;
-            gap: 15px;
+        nav {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--light-blue) 100%);
+            padding: 1rem 2rem;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
-        .logo {
-            font-size: 1.6rem;
-            font-weight: bold;
-            color: #c49a2b;
-            letter-spacing: -0.5px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
+        nav ul {
             list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
         }
 
-        .nav-links a {
+        nav a {
+            color: var(--cream);
             text-decoration: none;
-            color: #1a1a2e;
-            font-weight: 500;
-            transition: color 0.3s;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
         }
 
-        .nav-links a:hover {
-            color: #c49a2b;
+        nav a:hover {
+            color: var(--gold);
+            text-decoration: underline;
         }
 
-        /* Buttons */
-        .btn {
-            padding: 10px 24px;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: #c49a2b;
-            color: #fff;
-            border: 1px solid #c49a2b;
-        }
-
-        .btn-primary:hover {
-            background: transparent;
-            color: #c49a2b;
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: #c49a2b;
-            border: 1px solid #c49a2b;
-        }
-
-        .btn-outline:hover {
-            background: #c49a2b;
-            color: #fff;
-        }
-
-        /* Hero */
+        /* Hero Section */
         .hero {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--light-blue) 100%);
+            color: var(--cream);
+            padding: 6rem 2rem;
             text-align: center;
-            padding: 80px 20px 60px;
-            background: linear-gradient(135deg, #fefaf5 0%, #fff5e6 100%);
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .hero h1 {
-            font-size: 2.8rem;
-            color: #c49a2b;
+            font-size: 3.5rem;
             margin-bottom: 1rem;
+            animation: fadeInDown 0.8s ease;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
-        .hero-tagline {
-            font-size: 1.2rem;
-            color: #4a4a6a;
+        .hero-subtitle {
+            font-size: 1.3rem;
             margin-bottom: 2rem;
+            color: var(--gold);
+            font-weight: 600;
         }
 
         .pillars {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            margin: 2rem 0;
-            flex-wrap: wrap;
+            margin-top: 3rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .pillar {
-            background: #fff;
-            padding: 0.8rem 1.8rem;
-            border-radius: 40px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            font-weight: 600;
-            color: #c49a2b;
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--gold);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Sections */
-        .section {
-            padding: 70px 10%;
+        .pillar:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(212,175,55,0.2);
+        }
+
+        .pillar-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .pillar-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--gold);
+        }
+
+        .pillar-text {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 4rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .section-title {
-            font-size: 2rem;
-            color: #c49a2b;
+        h2 {
+            font-size: 2.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 2rem;
+            text-align: center;
+            border-bottom: 4px solid var(--gold);
+            padding-bottom: 1rem;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            color: var(--dark-blue);
+            margin-top: 1.5rem;
             margin-bottom: 1rem;
-            text-align: center;
         }
 
-        .section-sub {
-            text-align: center;
-            color: #5a5a7a;
-            max-width: 700px;
-            margin: 0 auto 3rem;
+        .about-section {
+            background-color: var(--white);
+            border-left: 5px solid var(--gold);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
         }
 
-        /* Cards */
+        .about-section p {
+            margin: 1rem 0;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* Framework Grid */
         .framework-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
 
         .framework-card {
-            background: #fff;
+            background: linear-gradient(135deg, var(--cream) 0%, rgba(212,175,55,0.1) 100%);
+            border: 2px solid var(--gold);
             padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            text-align: center;
-            transition: transform 0.3s;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
 
         .framework-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(212,175,55,0.2);
+            border-color: var(--light-blue);
         }
 
-        .card-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .axiom-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .axiom-card {
-            background: #1a1a2e;
-            color: #fff;
-            padding: 1.5rem;
-            border-radius: 16px;
-            border-left: 4px solid #c49a2b;
-        }
-
-        .axiom-card strong {
-            color: #c49a2b;
-            display: block;
+        .framework-card h4 {
+            color: var(--dark-blue);
+            font-size: 1.4rem;
             margin-bottom: 0.5rem;
         }
 
-        /* Footer */
-        .footer {
-            text-align: center;
-            padding: 40px 20px;
-            background: #1a1a2e;
-            color: #ccc;
-            margin-top: 3rem;
+        .framework-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
         }
 
-        .footer a {
-            color: #c49a2b;
+        .framework-card p {
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Ethical Kernel Table */
+        .axioms-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--white);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+
+        .axioms-table th {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--light-blue) 100%);
+            color: var(--cream);
+            padding: 1.5rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .axioms-table td {
+            padding: 1.5rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .axioms-table tr:hover {
+            background-color: rgba(212,175,55,0.1);
+        }
+
+        .axioms-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .axiom-number {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+            min-width: 50px;
+        }
+
+        .axiom-name {
+            color: var(--dark-blue);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Contribution Section */
+        .contribution-section {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--light-blue) 100%);
+            color: var(--cream);
+            padding: 3rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .contribution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .contribution-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--gold);
+        }
+
+        .contribution-item h4 {
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--accent) 100%);
+            color: var(--dark-blue);
+            padding: 1rem 2rem;
+            border-radius: 5px;
             text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
         }
 
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                text-align: center;
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(212,175,55,0.3);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: var(--white);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin: 2rem 0;
+        }
+
+        .contact-info {
+            margin: 1.5rem 0;
+        }
+
+        .contact-info a {
+            color: var(--dark-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--gold);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--light-blue) 100%);
+            color: var(--cream);
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .footer-motto {
+            font-size: 1.3rem;
+            color: var(--gold);
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
             }
-            .hero h1 { font-size: 2rem; }
-            .pillars { gap: 0.8rem; }
-            .pillar { padding: 0.4rem 1rem; font-size: 0.85rem; }
-            .section { padding: 40px 5%; }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero {
+                padding: 3rem 1rem;
+                min-height: 350px;
+            }
+
+            nav ul {
+                gap: 1rem;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+
+            .pillars {
+                grid-template-columns: 1fr;
+            }
+
+            .framework-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .axioms-table {
+                font-size: 0.9rem;
+            }
+
+            .axioms-table td,
+            .axioms-table th {
+                padding: 1rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+        }
+
+        .section-title {
+            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">🌍 GELA</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#csd">CSD Framework</a></li>
-            <li><a href="#kernel">Ethical Kernel</a></li>
-            <li><a href="#join">Join</a></li>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">🏠 Home</a></li>
+            <li><a href="#about">📖 About</a></li>
+            <li><a href="#framework">📊 CSD Framework</a></li>
+            <li><a href="#kernel">🔑 Ethical Kernel</a></li>
+            <li><a href="#contribute">🚀 Contribute</a></li>
+            <li><a href="#contact">📧 Contact</a></li>
         </ul>
     </nav>
 
-    <div class="hero">
-        <h1>Global Ethical Leadership Alliance</h1>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>🌍 Global Ethical Leadership Alliance</h1>
+        <p class="hero-subtitle">Advancing Ethical AI & Just Systems for a Better World</p>
+        
         <div class="pillars">
-            <div class="pillar">⚖️ Justice is Worship</div>
-            <div class="pillar">🤝 Unity is Strength</div>
-            <div class="pillar">🌍 Humanity is Destiny</div>
+            <div class="pillar">
+                <div class="pillar-icon">⚖️</div>
+                <div class="pillar-title">Justice is Worship</div>
+                <div class="pillar-text">We pursue fairness, accountability, and moral integrity in every system we design.</div>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon">🤝</div>
+                <div class="pillar-title">Unity is Strength</div>
+                <div class="pillar-text">We believe in collaboration, collective action, and bridging diverse perspectives.</div>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon">🌍</div>
+                <div class="pillar-title">Humanity is Destiny</div>
+                <div class="pillar-text">We are committed to human flourishing, dignity, and a sustainable future for all.</div>
+            </div>
         </div>
-        <p class="hero-tagline">An apolitical, non-profit international alliance empowering ethical leaders, youth changemakers, and intercultural bridges — through the Conscious Systems Design (CSD) framework.</p>
-        <div class="btn-group" style="display: flex; gap: 1rem; justify-content: center;">
-            <a href="#join" class="btn btn-primary">Join the Alliance</a>
-            <a href="#csd" class="btn btn-outline">Explore Our Framework</a>
-        </div>
-        <p style="margin-top: 2rem; font-size: 0.85rem; color: #888;">Apolitical · Non-Profit · Global</p>
-    </div>
+    </section>
 
-    <div id="about" class="section">
-        <h2 class="section-title">Who We Are</h2>
-        <p class="section-sub">An Alliance Built on Conscience</p>
-        <div style="background: #fff; padding: 2rem; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <p>GELA is not a political movement or a software project. It is a living alliance of thinkers, youth leaders, educators, and activists who believe that every system — from AI to governance — must be designed with ethical intention.</p>
-            <p style="margin-top: 1rem;">Born in Dhaka in February 2026, GELA draws on the values of Islamic ethics (Adl, Amanah, Tawhid, Ilm), universal human rights, and the UN Sustainable Development Goals — weaving them into a single, coherent framework: Conscious Systems Design.</p>
-            <p style="margin-top: 1rem; font-weight: 500;">Our Core Belief: Technology must serve humanity — not control it. Leadership must be ethical — not power-hungry. Justice is not a policy position. It is a moral obligation — a form of worship.</p>
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2>📖 About GELA</h2>
         </div>
-    </div>
+        <div class="about-section">
+            <p>
+                The <strong>Global Ethical Leadership Alliance (GELA)</strong> is a forward-thinking, open-source community dedicated to advancing ethical artificial intelligence and responsible innovation. We bring together thinkers, developers, ethicists, and leaders to create frameworks that put ethics at the center of technological progress.
+            </p>
+            <p>
+                Founded in <strong>Dhaka, Bangladesh in February 2026</strong>, GELA draws on Islamic ethics, universal human rights principles, and the UN Sustainable Development Goals. We weave these values into a single, coherent framework: <strong>Conscious Systems Design (CSD)</strong>.
+            </p>
+            <p>
+                <strong>Our Belief:</strong> Technology must serve humanity—not control it. Leadership must be ethical—not power-hungry. Justice is not a policy position. It is a moral obligation—a form of worship.
+            </p>
+        </div>
+    </section>
 
-    <div id="csd" class="section" style="background: #fff5e6; border-radius: 30px;">
-        <h2 class="section-title">Conscious Systems Design</h2>
-        <p class="section-sub">CSD is GELA's philosophical and practical framework for building just, resilient, and humane systems. Grounded in the Still Human Protocol and the Ethical Kernel.</p>
+    <!-- CSD Framework Section -->
+    <section id="framework">
+        <div class="section-title">
+            <h2>📊 CSD Framework - 6 Core Components</h2>
+        </div>
+        <p style="text-align: center; margin-bottom: 2rem; font-size: 1.05rem;">
+            The <strong>Conscious Systems Design (CSD) Framework</strong> guides all GELA initiatives and decision-making.
+        </p>
         <div class="framework-grid">
-            <div class="framework-card"><div class="card-icon">🧭</div><h3>Still Human Protocol</h3><p>All AI and automated systems preserve human agency, dignity, and accountability.</p></div>
-            <div class="framework-card"><div class="card-icon">⚖️</div><h3>Ethical Kernel</h3><p>Six foundational axioms forming the moral core of any GELA-aligned system.</p></div>
-            <div class="framework-card"><div class="card-icon">🏛️</div><h3>AI Governance L1–L5</h3><p>Graduated framework for responsible AI integration — from tools to infrastructure.</p></div>
-            <div class="framework-card"><div class="card-icon">🌿</div><h3>Amanat Principle</h3><p>Leadership as sacred trust (amanah): stewardship of communities and future generations.</p></div>
-            <div class="framework-card"><div class="card-icon">🔒</div><h3>Still Human Boundary</h3><p>Non-negotiable limits protecting human dignity from algorithmic erosion.</p></div>
-            <div class="framework-card"><div class="card-icon">✨</div><h3>CCAH</h3><p>Conscious Civilization Attractor Hypothesis — ethical civilizations as a natural attractor state.</p></div>
+            <div class="framework-card fade-in">
+                <div class="framework-icon">💭</div>
+                <h4>Consciousness</h4>
+                <p>Self-awareness and understanding of ethical implications in every action and decision we make. Building systems with intentional moral reflection.</p>
+            </div>
+            <div class="framework-card fade-in">
+                <div class="framework-icon">🤲</div>
+                <h4>Service</h4>
+                <p>Commitment to serving humanity and using technology as a tool for collective good. Leadership rooted in stewardship, not dominance.</p>
+            </div>
+            <div class="framework-card fade-in">
+                <div class="framework-icon">⚔️</div>
+                <h4>Discipline</h4>
+                <p>Rigorous adherence to ethical principles and standards in research, development, and deployment. Uncompromising commitment to our values.</p>
+            </div>
+            <div class="framework-card fade-in">
+                <div class="framework-icon">🚀</div>
+                <h4>Innovation</h4>
+                <p>Creative problem-solving that balances technological advancement with ethical responsibility. Bold ideas grounded in moral wisdom.</p>
+            </div>
+            <div class="framework-card fade-in">
+                <div class="framework-icon">🌱</div>
+                <h4>Sustainability</h4>
+                <p>Creating systems that are environmentally responsible and socially equitable for future generations. Long-term thinking for collective survival.</p>
+            </div>
+            <div class="framework-card fade-in">
+                <div class="framework-icon">🔗</div>
+                <h4>Connection</h4>
+                <p>Building bridges between communities, fostering collaboration, and ensuring inclusive dialogue. Unity across difference and distance.</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div id="kernel" class="section">
-        <h2 class="section-title">The Ethical Kernel</h2>
-        <p class="section-sub">Six Axioms of Ethical Leadership — the moral constitution of GELA.</p>
-        <div class="axiom-grid">
-            <div class="axiom-card"><strong>01 Tawhid — Unity of Purpose</strong> All action flows from a single, integrated moral source. No contradiction between faith, reason, and justice.</div>
-            <div class="axiom-card"><strong>02 Adl — Justice as Foundation</strong> Justice is not a policy option — it is the structural baseline of every legitimate system.</div>
-            <div class="axiom-card"><strong>03 Amanah — Sacred Trust</strong> Leadership is a trust (amanah), not a privilege. Power held in stewardship.</div>
-            <div class="axiom-card"><strong>04 Ilm — Knowledge with Conscience</strong> Knowledge pursued without ethical grounding is dangerous. Learning must serve human flourishing.</div>
-            <div class="axiom-card"><strong>05 Rahmah — Universal Compassion</strong> Systems protect the most vulnerable. Mercy is a structural requirement.</div>
-            <div class="axiom-card"><strong>06 Shura — Collective Deliberation</strong> Decisions affecting communities must involve those communities. Inclusion is not optional.</div>
+    <!-- Ethical Kernel Section -->
+    <section id="kernel">
+        <div class="section-title">
+            <h2>🔑 Ethical Kernel - 6 Axioms</h2>
         </div>
-    </div>
+        <p style="text-align: center; margin-bottom: 2rem; font-size: 1.05rem;">
+            The <strong>Ethical Kernel</strong> forms the moral foundation of all GELA work:
+        </p>
+        <table class="axioms-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Axiom</th>
+                    <th>Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="axiom-number">01</td>
+                    <td class="axiom-name">Tawhid</td>
+                    <td><strong>Unity of Purpose:</strong> All action flows from a single, integrated moral source. No fragmentation between principle and practice.</td>
+                </tr>
+                <tr>
+                    <td class="axiom-number">02</td>
+                    <td class="axiom-name">Adl</td>
+                    <td><strong>Justice as Foundation:</strong> Justice is the structural baseline of every legitimate system. Built-in, not bolted-on.</td>
+                </tr>
+                <tr>
+                    <td class="axiom-number">03</td>
+                    <td class="axiom-name">Amanah</td>
+                    <td><strong>Sacred Trust:</strong> Leadership is a trust, not a privilege. Power held in stewardship for those we serve.</td>
+                </tr>
+                <tr>
+                    <td class="axiom-number">04</td>
+                    <td class="axiom-name">Ilm</td>
+                    <td><strong>Knowledge with Conscience:</strong> Learning must serve human flourishing. Wisdom, not just information.</td>
+                </tr>
+                <tr>
+                    <td class="axiom-number">05</td>
+                    <td class="axiom-name">Rahmah</td>
+                    <td><strong>Universal Compassion:</strong> Systems protect the most vulnerable. Mercy is structural, not optional.</td>
+                </tr>
+                <tr>
+                    <td class="axiom-number">06</td>
+                    <td class="axiom-name">Shura</td>
+                    <td><strong>Collective Deliberation:</strong> Decisions affecting communities must involve those communities. Democracy of wisdom.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <div id="join" class="section" style="text-align: center;">
-        <h2 class="section-title">Join the Alliance</h2>
-        <div style="background: #fff; padding: 2rem; border-radius: 20px;">
-            <p>GELA welcomes anyone who shares our commitment to ethical leadership, youth empowerment, and intercultural dialogue — regardless of background, nationality, or field.</p>
-            <p style="margin: 1.5rem 0;">🎓 Students 🧑‍🏫 Educators 🧑‍💻 Researchers 🌐 Activists 🏛️ Policymakers 💡 Changemakers</p>
-            <a href="mailto:globalethicalleadershipallianc@gmail.com" class="btn btn-primary" style="margin: 0 auto;">✉️ Contact Us to Join</a>
-            <p style="margin-top: 1rem;">Or email: globalethicalleadershipallianc@gmail.com</p>
+    <!-- Contribution Section -->
+    <section id="contribute" class="contribution-section">
+        <h2 style="color: var(--cream); border-bottom-color: var(--gold); margin-bottom: 2rem;">🚀 How to Contribute</h2>
+        <p style="text-align: center; margin-bottom: 2rem; font-size: 1.05rem;">
+            GELA is an <strong>open-source project</strong>, and we welcome contributions from everyone.
+        </p>
+        
+        <div class="contribution-grid">
+            <div class="contribution-item">
+                <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🔧</div>
+                <h4>Developers</h4>
+                <p>Contribute code, build tools, and develop features aligned with GELA's ethical values.</p>
+            </div>
+            <div class="contribution-item">
+                <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">✍️</div>
+                <h4>Writers & Researchers</h4>
+                <p>Share research, document frameworks, and create educational content.</p>
+            </div>
+            <div class="contribution-item">
+                <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🎨</div>
+                <h4>Designers</h4>
+                <p>Improve user experience, create visuals, and enhance the website design.</p>
+            </div>
+            <div class="contribution-item">
+                <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">💡</div>
+                <h4>Ideas & Feedback</h4>
+                <p>Share your thoughts, suggest improvements, and help shape GELA's future.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="footer">
-        <p>⚖️ Justice is Worship | 🤝 Unity is Strength | 🌍 Humanity is Destiny</p>
-        <p>© 2026 Global Ethical Leadership Alliance — Founded in Dhaka, Bangladesh · Built for the world</p>
-        <p><a href="#">Google Site</a>  ·  <a href="mailto:globalethicalleadershipallianc@gmail.com">Email</a></p>
-    </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <h3 style="color: var(--cream); margin-top: 1.5rem;">Get Started:</h3>
+            <p style="margin: 1rem 0;">🔗 Fork the repository | 📋 Create a feature branch | 💾 Commit your changes | 🚀 Push and open a PR</p>
+            <a href="https://github.com/globalethicalleadershipallianc-rgb/GELA-Ethical-AI" class="btn">📂 View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>📧 Get in Touch</h2>
+        </div>
+        <div class="contact-section">
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                We'd love to hear from you. Whether you're interested in joining GELA, collaborating on projects, or simply want to discuss ethical AI—reach out!
+            </p>
+            
+            <div class="contact-info">
+                <p style="margin: 1rem 0;">📧 <strong>Email:</strong></p>
+                <a href="mailto:globalethicalleadershipallianc@gmail.com">globalethicalleadershipallianc@gmail.com</a>
+            </div>
+
+            <div class="contact-info">
+                <p style="margin: 1rem 0;">🐙 <strong>GitHub Organization:</strong></p>
+                <a href="https://github.com/globalethicalleadershipallianc-rgb" target="_blank">github.com/globalethicalleadershipallianc-rgb</a>
+            </div>
+
+            <div class="contact-info">
+                <p style="margin: 1rem 0;">💬 <strong>Contribute & Collaborate:</strong></p>
+                <a href="https://github.com/globalethicalleadershipallianc-rgb/GELA-Ethical-AI" target="_blank">GELA-Ethical-AI Repository</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-motto">⚖️ Justice is Worship | 🤝 Unity is Strength | 🌍 Humanity is Destiny</div>
+        <p>Global Ethical Leadership Alliance</p>
+        <p>Building ethical systems for a just and sustainable future</p>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.9;">📍 Founded in Dhaka, Bangladesh • Serving the world</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">
+            <a href="https://github.com/globalethicalleadershipallianc-rgb/GELA-Ethical-AI" style="color: var(--gold); text-decoration: none;">🔗 GitHub</a> | 
+            Open Source for Ethical AI
+        </p>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem; border-top: 1px solid rgba(212,175,55,0.3); padding-top: 1rem;">
+            © 2026 Global Ethical Leadership Alliance. Built with ❤️ for justice and humanity.
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
