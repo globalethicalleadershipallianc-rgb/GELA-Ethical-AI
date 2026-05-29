@@ -252,6 +252,45 @@
             font-size: 1.1rem;
         }
 
+        /* Progress Report Section */
+        .progress-section {
+            background: linear-gradient(135deg, rgba(212,175,55,0.1) 0%, rgba(45,90,123,0.1) 100%);
+            border: 2px solid var(--gold);
+            padding: 2.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .progress-section h3 {
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+
+        .progress-section p {
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .progress-link {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--accent) 100%);
+            color: var(--dark-blue);
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .progress-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(212,175,55,0.3);
+        }
+
         /* Contribution Section */
         .contribution-section {
             background: linear-gradient(135deg, var(--dark-blue) 0%, var(--light-blue) 100%);
@@ -432,6 +471,7 @@
         <ul>
             <li><a href="#home">🏠 Home</a></li>
             <li><a href="#about">📖 About</a></li>
+            <li><a href="#progress">📊 Progress Report</a></li>
             <li><a href="#framework">📊 CSD Framework</a></li>
             <li><a href="#kernel">🔑 Ethical Kernel</a></li>
             <li><a href="#contribute">🚀 Contribute</a></li>
@@ -470,14 +510,28 @@
         </div>
         <div class="about-section">
             <p>
-                The <strong>Global Ethical Leadership Alliance (GELA)</strong> is a forward-thinking, open-source community dedicated to advancing ethical artificial intelligence and responsible innovation. We bring together thinkers, developers, ethicists, and leaders to create frameworks that put ethics at the center of technological progress.
+                The <strong>Global Ethical Leadership Alliance (GELA)</strong> is a forward-thinking, open-source community dedicated to advancing ethical artificial intelligence and responsible [...]
             </p>
             <p>
-                Founded in <strong>Dhaka, Bangladesh in February 2026</strong>, GELA draws on Islamic ethics, universal human rights principles, and the UN Sustainable Development Goals. We weave these values into a single, coherent framework: <strong>Conscious Systems Design (CSD)</strong>.
+                Founded in <strong>Dhaka, Bangladesh in February 2026</strong>, GELA draws on Islamic ethics, universal human rights principles, and the UN Sustainable Development Goals. We weave[...]
             </p>
             <p>
-                <strong>Our Belief:</strong> Technology must serve humanity—not control it. Leadership must be ethical—not power-hungry. Justice is not a policy position. It is a moral obligation—a form of worship.
+                <strong>Our Belief:</strong> Technology must serve humanity—not control it. Leadership must be ethical—not power-hungry. Justice is not a policy position. It is a moral obliga[...]
             </p>
+        </div>
+    </section>
+
+    <!-- Progress Report Section -->
+    <section id="progress">
+        <div class="section-title">
+            <h2>📊 Progress Report</h2>
+        </div>
+        <div class="progress-section">
+            <h3>GELA + ASI – Progress Report (May 2026)</h3>
+            <p>
+                Read our comprehensive progress report on GELA's current status, completed features, and vision for ethical superintelligence development. This report outlines how we are building a strong ethical foundation toward safe and beneficial future AI.
+            </p>
+            <a href="https://github.com/globalethicalleadershipallianc-rgb/GELA-Ethical-AI/blob/main/PROGRESS_REPORT.md" class="progress-link">📄 Read Full Progress Report</a>
         </div>
     </section>
 
